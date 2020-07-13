@@ -1,0 +1,17 @@
+---***Generate basic unit test scaffolding for your OpenAPI specification***---
+
+Mocha testcases are generated for each endpoints present in the OpenAPI specification. 
+
+Here we will see how to feed data to the test cases and run the test cases.
+
+As part of test case generation following files will be available,
+
+1. Mocha test cases - Prefilled Unique IDs for all the parameters present in the test cases. The Unique ID pattern is Endpoint_Operation_OpertationType_ResponseCode.
+2. testcaseInput.csv file - to get the input from user for each parameter
+3. runner.js - to run the generated Mocha test cases by with the value provided in the csv.
+
+Following are the steps to run the test case:
+
+1. Fill in the parameter value under ParamValue column in testcaseInput.csv
+2. Execute following command: "node runner.js" - results will be available in the terminal.
+

@@ -1,0 +1,16 @@
+TestParam,ParamType,ParamValue,ParamExample
+PET_PUT_400_REQUEST_BODY,object,,[object Object]
+PET_PUT_404_REQUEST_BODY,object,,[object Object]
+PET_PUT_405_REQUEST_BODY,object,,[object Object]
+PET_POST_405_REQUEST_BODY,object,,[object Object]
+PET_FINDBYSTATUS_GET_200_STATUS,string,,
+PET_FINDBYSTATUS_GET_400_STATUS,string,,
+PET_FINDBYTAGS_GET_200_TAGS,string,,
+PET_FINDBYTAGS_GET_400_TAGS,string,,
+PET_PETID_GET_200_PETID,integer,,
+PET_PETID_GET_400_PETID,integer,,
+PET_PETID_GET_404_PETID,integer,,
+PET_PETID_POST_405_PETID,integer,,
+PET_PETID_POST_405_REQUEST_BODY,object,,[object Object]
+PET_PETID_DELETE_400_API_KEY,string,,
+PET_PETID_DELETE_400_PETID,integer,,
