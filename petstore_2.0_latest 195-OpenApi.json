@@ -1,0 +1,424 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "petstore_2.0_latest 195",
+        "description": "Demo product",
+        "contact": {
+            "url": "/pet"
+        },
+        "version": "0.0.1"
+    },
+    "servers": [
+        {
+            "url": "/pet"
+        }
+    ],
+    "paths": {
+        "/pet": {
+            "description": "/pet",
+            "put": {
+                "tags": [
+                    ""
+                ],
+                "parameters": [],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "title": "request_body",
+                                "type": "object",
+                                "$ref": "#/components/schemas/Pet"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    },
+                    "405": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    ""
+                ],
+                "parameters": [],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "title": "request_body",
+                                "type": "object",
+                                "$ref": "#/components/schemas/Pet"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "405": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pet/findByStatus": {
+            "description": "/pet/findByStatus",
+            "get": {
+                "tags": [
+                    ""
+                ],
+                "parameters": [
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/xml": {
+                                "schema": {
+                                    "type": "object",
+                                    "description": "",
+                                    "$ref": "#/components/schemas/Pet"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pet/findByTags": {
+            "description": "/pet/findByTags",
+            "get": {
+                "tags": [
+                    ""
+                ],
+                "parameters": [
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/xml": {
+                                "schema": {
+                                    "type": "object",
+                                    "description": "",
+                                    "$ref": "#/components/schemas/Pet"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pet/{petId}": {
+            "description": "/pet/{petId}",
+            "get": {
+                "tags": [
+                    ""
+                ],
+                "parameters": [
+                    {
+                        "name": "petId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/xml": {
+                                "schema": {
+                                    "type": "object",
+                                    "description": "",
+                                    "$ref": "#/components/schemas/Pet"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    ""
+                ],
+                "parameters": [
+                    {
+                        "name": "petId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "title": "request_body",
+                                "type": "object",
+                                "$ref": "#/components/schemas/Pet.photoUrls"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "405": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    ""
+                ],
+                "parameters": [
+                    {
+                        "name": "api_key",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "petId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Pet": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "id",
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "category": {
+                        "title": "category",
+                        "type": "object",
+                        "$ref": "#/components/schemas/Category"
+                    },
+                    "name": {
+                        "title": "name",
+                        "type": "string",
+                        "example": "doggie"
+                    },
+                    "photoUrls": {
+                        "type": "array",
+                        "items": {
+                            "title": "photoUrls",
+                            "type": "string"
+                        }
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "title": "tags",
+                            "type": "string"
+                        }
+                    },
+                    "status": {
+                        "title": "status",
+                        "type": "string",
+                        "description": "pet status in the store",
+                        "example": "[available, pending, sold]"
+                    }
+                },
+                "description": "Pet"
+            },
+            "Tag": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "id",
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "name": {
+                        "title": "name",
+                        "type": "string"
+                    }
+                },
+                "description": "Tag"
+            },
+            "Category": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "id",
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "name": {
+                        "title": "name",
+                        "type": "string"
+                    }
+                },
+                "description": "Category"
+            },
+            "ApiResponse": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "title": "code",
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "type": {
+                        "title": "type",
+                        "type": "string"
+                    },
+                    "message": {
+                        "title": "message",
+                        "type": "string"
+                    }
+                },
+                "description": "ApiResponse"
+            }
+        },
+        "extensions": {
+            "x-apitive-documentation": [
+                {
+                    "id": 597,
+                    "title": "petstore_2.0_latest 195",
+                    "url": "",
+                    "content": "Demo product",
+                    "visibility": true,
+                    "type": "General"
+                }
+            ]
+        }
+    }
+}
