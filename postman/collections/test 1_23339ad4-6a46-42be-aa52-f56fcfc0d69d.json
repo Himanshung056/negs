@@ -1,18 +1,17 @@
 {
     "info": {
-        "_postman_id": "596c4eff-4ce0-4666-841a-1ac088088d82",
+        "_postman_id": "c76d4f77-2f4d-4dcb-9c64-76f8d137b118",
         "name": "test 1",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
     },
     "item": [
         {
             "name": "Sample endpoint: Returns details about a particular user",
-            "id": "44890f7e-10d2-4eb3-be52-3740c1d04374",
             "request": {
                 "method": "GET",
                 "header": [],
                 "url": {
-                    "raw": "{{baseUrl}}/user?id=99774969",
+                    "raw": "{{baseUrl}}/user?id=99774969gvvyg",
                     "host": [
                         "{{baseUrl}}"
                     ],
@@ -22,7 +21,7 @@
                     "query": [
                         {
                             "key": "id",
-                            "value": "99774969",
+                            "value": "99774969gvvyg",
                             "description": "(Required) ID of the user"
                         }
                     ]
@@ -30,7 +29,6 @@
             },
             "response": [
                 {
-                    "id": "c328cc30-d21e-4540-b9d7-cb9798bfe3f2",
                     "name": "Sample response: Details about a user by ID",
                     "originalRequest": {
                         "method": "GET",
@@ -73,11 +71,9 @@
                         }
                     ],
                     "cookie": [],
-                    "responseTime": null,
                     "body": "{\n \"id\": 59703203,\n \"name\": \"a\",\n \"tag\": \"fugiat consectetur incididunt labore\"\n}"
                 },
                 {
-                    "id": "f84099d8-b70e-4adc-8d95-2187c644bdd2",
                     "name": "Unexpected error",
                     "originalRequest": {
                         "method": "GET",
@@ -114,7 +110,6 @@
                         }
                     ],
                     "cookie": [],
-                    "responseTime": null,
                     "body": "{\n \"code\": 91073099,\n \"message\": \"commodo dolor\"\n}"
                 }
             ]
@@ -137,7 +132,6 @@
     },
     "variable": [
         {
-            "id": "9817cbd8-ed8b-49e4-8c11-db76d2688eaa",
             "key": "baseUrl",
             "value": "https://petstore.swagger.io/v1",
             "type": "string"
