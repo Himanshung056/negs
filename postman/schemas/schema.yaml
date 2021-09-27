@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   version: '1'
   title: '1'
-  servers: 'sacascas'
+servers:
   - url: 'https://petstore.swagger.io/v1'
 paths:
   /user:
@@ -23,7 +23,10 @@ paths:
         '200':
           description: 'Sample response: Details about a user by ID'
           headers:
-            x-nexasdas string
+            x-next:
+              description: A link to the next page of responses
+              schema:
+                type: string
           content:
             application/json:
               schema:
@@ -42,7 +45,7 @@ components:
         - id
         - name
       properties:
-       ]listUser id:
+        id:
           type: integer
           format: int64
         name:
