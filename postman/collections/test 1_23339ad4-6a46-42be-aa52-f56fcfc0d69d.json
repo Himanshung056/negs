@@ -1,146 +1,149 @@
 {
-    "info": {
-        "_postman_id": "596c4eff-4ce0-4666-841a-1ac088088d82",
-        "name": "test 1",
-        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-    },
-    "item": [
-        {
-            "name": "Sample endpoint: Returns details about a particular user",
-            "id": "44890f7e-10d2-4eb3-be52-3740c1d04374",
-            "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                    "raw": "{{baseUrl}}/user?id=99774969",
-                    "host": [
-                        "{{baseUrl}}"
-                    ],
-                    "path": [
-                        "user"
-                    ],
-                    "query": [
-                        {
-                            "key": "id",
-                            "value": "99774969",
-                            "description": "(Required) ID of the user"
-                        }
-                    ]
-                }
-            },
-            "response": [
-                {
-                    "id": "c328cc30-d21e-4540-b9d7-cb9798bfe3f2",
-                    "name": "Sample response: Details about a user by ID",
-                    "originalRequest": {
-                        "method": "GET",
-                        "header": [
-                            {
-                                "description": "Added as a part of security scheme: basic",
-                                "key": "Authorization",
-                                "value": "Basic <credentials>"
-                            }
-                        ],
-                        "url": {
-                            "raw": "{{baseUrl}}/user?id=99774969",
-                            "host": [
-                                "{{baseUrl}}"
-                            ],
-                            "path": [
-                                "user"
-                            ],
-                            "query": [
-                                {
-                                    "key": "id",
-                                    "value": "99774969"
-                                }
-                            ]
-                        }
-                    },
-                    "status": "OK",
-                    "code": 200,
-                    "_postman_previewlanguage": "json",
-                    "header": [
-                        {
-                            "disabled": false,
-                            "description": "A link to the next page of responses",
-                            "key": "x-next",
-                            "value": "aute quis laboris"
-                        },
-                        {
-                            "key": "Content-Type",
-                            "value": "application/json"
-                        }
-                    ],
-                    "cookie": [],
-                    "responseTime": null,
-                    "body": "{\n \"id\": 59703203,\n \"name\": \"a\",\n \"tag\": \"fugiat consectetur incididunt labore\"\n}"
-                },
-                {
-                    "id": "f84099d8-b70e-4adc-8d95-2187c644bdd2",
-                    "name": "Unexpected error",
-                    "originalRequest": {
-                        "method": "GET",
-                        "header": [
-                            {
-                                "description": "Added as a part of security scheme: basic",
-                                "key": "Authorization",
-                                "value": "Basic <credentials>"
-                            }
-                        ],
-                        "url": {
-                            "raw": "{{baseUrl}}/user?id=99774969",
-                            "host": [
-                                "{{baseUrl}}"
-                            ],
-                            "path": [
-                                "user"
-                            ],
-                            "query": [
-                                {
-                                    "key": "id",
-                                    "value": "99774969"
-                                }
-                            ]
-                        }
-                    },
-                    "status": "Internal Server Error",
-                    "code": 500,
-                    "_postman_previewlanguage": "json",
-                    "header": [
-                        {
-                            "key": "Content-Type",
-                            "value": "application/json"
-                        }
-                    ],
-                    "cookie": [],
-                    "responseTime": null,
-                    "body": "{\n \"code\": 91073099,\n \"message\": \"commodo dolor\"\n}"
-                }
-            ]
-        }
-    ],
-    "auth": {
-        "type": "basic",
-        "basic": [
-            {
-                "key": "username",
-                "value": "<Basic Auth Username>",
-                "type": "string"
-            },
-            {
-                "key": "password",
-                "value": "<Basic Auth Password>",
-                "type": "string"
-            }
-        ]
-    },
-    "variable": [
-        {
-            "id": "9817cbd8-ed8b-49e4-8c11-db76d2688eaa",
-            "key": "baseUrl",
-            "value": "https://petstore.swagger.io/v1",
-            "type": "string"
-        }
-    ]
+	"info": {
+		"_postman_id": "a90eada7-f529-4940-bf4f-16bf7944db1b",
+		"name": "test 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "817031-a90eada7-f529-4940-bf4f-16bf7944db1b"
+	},
+	"item": [
+		{
+			"name": "Sample endpoint: Returns details about a particular user",
+			"id": "87326496-a06b-4e9e-841f-288261541ec1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user?id=99774969",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "99774969",
+							"description": "(Required) ID of the user"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "a4dcc8ad-b66b-40a8-8cdb-503d8ccafd34",
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=99774969",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "99774969"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "aute quis laboris"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n \"id\": 59703203,\n \"name\": \"a\",\n \"tag\": \"fugiat consectetur incididunt labore\"\n}"
+				},
+				{
+					"id": "abc6a7a5-c800-4d39-9238-a5f17ad946fe",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=99774969",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "99774969"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n \"code\": 91073099,\n \"message\": \"commodo dolor\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "9817cbd8-ed8b-49e4-8c11-db76d2688eaa",
+			"key": "baseUrl",
+			"value": "https://petstore.swagger.io/v1",
+			"type": "string"
+		}
+	]
 }
