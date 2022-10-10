@@ -7,8 +7,11 @@
 	},
 	"item": [
 		{
-			"name": "Sample endpoint: Returns details about a particular user",
+			"name": "aaa",
 			"id": "d9cc57e4-f041-459c-829f-3464114d060f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -61,7 +64,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"disabled": false,
@@ -75,7 +77,6 @@
 						}
 					],
 					"cookie": [],
-					"responseTime": null,
 					"body": "{\n \"id\": -54004659,\n \"name\": \"voluptate laboris Duis\",\n \"tag\": \"laborum amet\"\n}"
 				},
 				{
@@ -109,7 +110,6 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -117,7 +117,6 @@
 						}
 					],
 					"cookie": [],
-					"responseTime": null,
 					"body": "{\n \"code\": 28127951,\n \"message\": \"nisi laborum in\"\n}"
 				}
 			]
