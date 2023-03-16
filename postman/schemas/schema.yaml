@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: '1asdasdas'
+  version: '666'
   title: '1'
 servers:
   - url: 'https://petstore.swagger.io/v1'
