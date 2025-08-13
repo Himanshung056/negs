@@ -13,6 +13,7 @@ rootDirectory = dfd
 [config.relations.collections.metaData]
 
 [config.relations.apiDefinition]
+files[] = {"path":"awsd/index.yaml","metaData":{}}
 files[] = {"path":"index.yaml","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
